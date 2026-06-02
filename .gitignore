@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Environment / sensitive data
+.env
+.env.*
+config.secret.*
+secrets.*
+
+# Node (in case ever used)
+node_modules/
+npm-debug.log*
+
+# Build output (in case ever used)
+dist/
+build/
