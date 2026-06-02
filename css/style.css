@@ -63,6 +63,22 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-head); font-weight: 700; }
 
 .navbar-brand img { height: 52px; }
 
+.logo-text {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: .04em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+}
+.logo-text .logo-moto     { color: #ffffff; }
+.logo-text .logo-solutions { color: var(--red); }
+.footer-logo-text { font-family: var(--font-head); font-weight: 800; font-size: 1.3rem; letter-spacing: .04em; line-height: 1; display: inline-block; }
+.footer-logo-text .logo-moto     { color: #ffffff; }
+.footer-logo-text .logo-solutions { color: var(--red); }
+
 .nav-link {
   font-family: var(--font-head);
   font-size: .82rem;
@@ -674,7 +690,7 @@ footer {
 }
 .article-body h2 { font-size: 1.5rem; color: var(--dark); margin: 2.2rem 0 .8rem; }
 .article-body h3 { font-size: 1.2rem; color: var(--dark); margin: 1.8rem 0 .6rem; }
-.article-body p  { margin-bottom: 1.2rem; }
+.article-body p  { margin-bottom: 1.2rem; text-align: justify; }
 .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1.2rem; }
 .article-body li { margin-bottom: .5rem; }
 .article-body strong { color: var(--dark); }
