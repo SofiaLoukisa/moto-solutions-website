@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     AOS.init({ duration: 750, once: true, offset: 60 });
   }
 
+  /* ── Hero carousel: start cycling right away, don't wait for full page load ── */
+  const heroCarouselEl = document.getElementById('heroCarousel');
+  if (heroCarouselEl && typeof bootstrap !== 'undefined') {
+    new bootstrap.Carousel(heroCarouselEl, { ride: 'carousel' });
+  }
+
   /* ── Navbar scroll shadow ── */
   const navbar = document.querySelector('.navbar');
   if (navbar) {

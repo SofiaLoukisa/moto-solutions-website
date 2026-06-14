@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <span class="logo-text"><span class="logo-moto">MOTO</span> <span class="logo-solutions">SOLUTIONS</span></span>
+      <img src="assets/logo-wordmark.png" alt="Moto Solutions">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
@@ -27,6 +27,7 @@
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Αρχική</a></li>
         <li class="nav-item"><a class="nav-link active" href="services.html">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="no-license.html">Χωρίς Δίπλωμα</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Γκαλερί</a></li>
         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Επικοινωνία</a></li>
@@ -40,13 +41,17 @@
   </div>
 </nav>
 
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-content">
-    <h1>Οι Υπηρεσίες μας</h1>
-    <p>Πλήρεις λύσεις για κάθε ανάγκη της μοτοσυκλέτας σας</p>
+<section id="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <span class="hero-badge"><i class="fas fa-certificate me-1"></i>Εξουσιοδοτημένο Service Yamaha</span>
+    <h1>Η Μοτοσυκλέτα σας<br><span>Αξίζει τα Καλύτερα</span></h1>
+    <p>Επαγγελματικό service, γνήσια ανταλλακτικά και πλήρης εξοπλισμός για κάθε μοτοσυκλέτα, στη Μεταμόρφωση από το 2000.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-red">Κλείστε Ραντεβού</a>
+    </div>
   </div>
-</div>
+  <a href="#stats" class="hero-scroll"><i class="fas fa-chevron-down"></i></a>
+</section>
 
 <!-- ── SERVICE 1: SERVICE ── -->
 <section class="section-pad">
@@ -56,7 +61,6 @@
         <img src="assets/14.jpg" alt="Service Μοτοσυκλετών" style="border-radius:16px;width:100%;height:400px;object-fit:cover;box-shadow:var(--shadow);" />
       </div>
       <div class="col-lg-6" data-aos="fade-left">
-        <div class="service-icon" style="margin:0 0 1.2rem;"><i class="fas fa-wrench"></i></div>
         <h2 class="section-title">Service & Συντήρηση</h2>
         <div class="section-divider" style="margin:.8rem 0 1.5rem;"></div>
         <p style="color:var(--gray);line-height:1.8;margin-bottom:1.2rem;text-align:justify;">
@@ -87,24 +91,17 @@
         <img src="assets/10.jpg" alt="Ανταλλακτικά" style="border-radius:16px;width:100%;height:400px;object-fit:cover;box-shadow:var(--shadow);" />
       </div>
       <div class="col-lg-6" data-aos="fade-right">
-        <div class="service-icon" style="margin:0 0 1.2rem;"><i class="fas fa-cog"></i></div>
         <h2 class="section-title">Γνήσια Ανταλλακτικά</h2>
         <div class="section-divider" style="margin:.8rem 0 1.5rem;"></div>
         <p style="color:var(--gray);line-height:1.8;margin-bottom:1.2rem;text-align:justify;">
           Παρέχουμε γνήσια ανταλλακτικά Yamaha και πολλών άλλων επώνυμων κατασκευαστών. Η ποιότητα των ανταλλακτικών εγγυάται την αξιοπιστία και τη μακροζωία της μοτοσυκλέτας σας.
         </p>
-        <div class="row g-3 mb-3">
-          <div class="col-6">
-            <div style="background:#fff;border-radius:10px;padding:1rem;text-align:center;box-shadow:var(--shadow);">
-              <i class="fab fa-" style="font-size:1.5rem;color:var(--red);margin-bottom:.5rem;display:block;"></i>
-              <strong style="font-size:.9rem;color:var(--dark);">YAMAHA</strong>
-            </div>
+        <div class="row g-3 mb-3 align-items-center">
+          <div class="col-6 text-center">
+            <img src="assets/yamaha-logo.png" alt="Yamaha" style="max-width:100%;max-height:48px;" />
           </div>
-          <div class="col-6">
-            <div style="background:#fff;border-radius:10px;padding:1rem;text-align:center;box-shadow:var(--shadow);">
-              <i class="fas fa-oil-can" style="font-size:1.5rem;color:var(--red);margin-bottom:.5rem;display:block;"></i>
-              <strong style="font-size:.9rem;color:var(--dark);">YAMALUBE</strong>
-            </div>
+          <div class="col-6 text-center">
+            <img src="assets/yamalube-logo.png" alt="Yamalube" style="width:135px;height:48px;max-width:100%;" />
           </div>
         </div>
         <p style="color:var(--gray);line-height:1.8;">
@@ -123,24 +120,23 @@
         <img src="assets/16.jpg" alt="Ελαστικά" style="border-radius:16px;width:100%;height:400px;object-fit:cover;box-shadow:var(--shadow);" />
       </div>
       <div class="col-lg-6" data-aos="fade-left">
-        <div class="service-icon" style="margin:0 0 1.2rem;"><i class="fas fa-circle-notch"></i></div>
         <h2 class="section-title">Ελαστικά Μοτοσυκλέτας</h2>
         <div class="section-divider" style="margin:.8rem 0 1.5rem;"></div>
         <p style="color:var(--gray);line-height:1.8;margin-bottom:1.5rem;text-align:justify;">
           Ο πιο σημαντικός παράγοντας για την ασφάλεια και τη σωστή χρήση της μοτοσυκλέτας σας είναι τα ελαστικά. Σε εμάς θα βρείτε τις πιο γνωστές μάρκες ελαστικών για κάθε τύπο μοτοσυκλέτας.
         </p>
         <div class="row g-3">
-          <div class="col-6">
-            <div class="brand-logo"><span>METZELER</span></div>
+          <div class="col-6 text-center">
+            <img src="assets/metzeler.jpeg" alt="Metzeler" style="width:200px;height:100px;max-width:100%;border-radius:8px;" />
           </div>
-          <div class="col-6">
-            <div class="brand-logo"><span>PIRELLI</span></div>
+          <div class="col-6 text-center">
+            <img src="assets/pirelli.png" alt="Pirelli" style="width:200px;height:100px;max-width:100%;border-radius:8px;" />
           </div>
-          <div class="col-6">
-            <div class="brand-logo"><span>MICHELIN</span></div>
+          <div class="col-6 text-center">
+            <img src="assets/michelin.jpg" alt="Michelin" style="width:200px;height:100px;max-width:100%;border-radius:8px;" />
           </div>
-          <div class="col-6">
-            <div class="brand-logo"><span>BRIDGESTONE</span></div>
+          <div class="col-6 text-center">
+            <img src="assets/bridgestone.jpg" alt="Bridgestone" style="width:200px;height:100px;max-width:100%;border-radius:8px;" />
           </div>
         </div>
       </div>
@@ -153,16 +149,16 @@
   <div class="container">
     <div class="row align-items-center g-5 flex-lg-row-reverse">
       <div class="col-lg-6" data-aos="fade-left">
-        <img src="assets/3.jpg" alt="Συναγερμοί" style="border-radius:16px;width:100%;height:400px;object-fit:cover;box-shadow:var(--shadow);" />
+        <div style="position:relative;">
+          <img src="assets/metasystem.jpeg" alt="Συναγερμοί" style="border-radius:16px;width:100%;height:400px;object-fit:cover;box-shadow:var(--shadow);" />
+        </div>
       </div>
       <div class="col-lg-6" data-aos="fade-right">
-        <div class="service-icon" style="margin:0 0 1.2rem;"><i class="fas fa-bell"></i></div>
         <h2 class="section-title">Συναγερμοί</h2>
         <div class="section-divider" style="margin:.8rem 0 1.5rem;"></div>
         <p style="color:var(--gray);line-height:1.8;margin-bottom:1.5rem;text-align:justify;">
           Στο κατάστημά μας διατίθενται οι συναγερμοί της <strong>Metasystem</strong> τους οποίους χαρακτηρίζει η κορυφαία ποιότητα κατασκευής με τα υψηλότερα standards ασφάλειας της μοτοσυκλέτας σας.
         </p>
-        <div class="brand-logo" style="width:180px;"><span>METASYSTEM</span></div>
         <ul style="list-style:none;padding:0;margin-top:1.5rem;display:flex;flex-direction:column;gap:.7rem;">
           <li style="display:flex;align-items:center;gap:.75rem;"><i class="fas fa-check-circle" style="color:var(--red);"></i>Τοποθέτηση & ρύθμιση</li>
           <li style="display:flex;align-items:center;gap:.75rem;"><i class="fas fa-check-circle" style="color:var(--red);"></i>GPS tracking</li>
@@ -177,62 +173,40 @@
 <section class="section-pad">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
-      <div class="service-icon" style="margin:0 auto 1.2rem;"><i class="fas fa-helmet-safety"></i></div>
       <h2 class="section-title">Αξεσουάρ & Βελτιώσεις</h2>
       <div class="section-divider mx-auto"></div>
       <p class="section-subtitle">Πλήρες γκάμα προϊόντων από τις κορυφαίες μάρκες της αγοράς</p>
     </div>
-    <div class="row g-4">
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-        <div class="service-card">
-          <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-hard-hat"></i></div>
-          <h4>Κράνη SHARK</h4>
-          <p>Πλήρες γκάμα κρανών SHARK στις καλύτερες τιμές της αγοράς για μέγιστη ασφάλεια.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
         <div class="service-card">
           <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-suitcase"></i></div>
           <h4>Μπαγκαζιέρες KAPPA</h4>
           <p>Επιλογή μπαγκαζιερών KAPPA για άνετες αποδράσεις με αποσκευές.</p>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
         <div class="service-card">
           <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-fire"></i></div>
           <h4>Εξατμίσεις</h4>
           <p>Termignoni, Akrapovic, Remus, Yoshimura. Αναβαθμίστε τον ήχο και τις επιδόσεις.</p>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
         <div class="service-card">
           <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-oil-can"></i></div>
           <h4>Λιπαντικά</h4>
-          <p>MOTUL, YAMALUBE, ROCKOIL, Valvoline. Τα καλύτερα λιπαντικά για τη μηχανή σας.</p>
+          <p>YAMALUBE, ROCKOIL, MOTUL, SILKOLENE. Τα καλύτερα λιπαντικά για τη μηχανή σας.</p>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
         <div class="service-card">
           <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-link"></i></div>
           <h4>Σπρέι Αλυσίδας</h4>
           <p>YAMALUBE & VALVOLINE. Προστασία και λίπανση αλυσίδας για μεγαλύτερη διάρκεια ζωής.</p>
         </div>
       </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
-        <div class="service-card">
-          <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-car-crash"></i></div>
-          <h4>Προστατευτικά</h4>
-          <p>J Costa, DNA. Προστατευτικά ένδυσης και εξοπλισμός ασφαλείας για τον αναβάτη.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
-        <div class="service-card">
-          <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-guitar"></i></div>
-          <h4>GIANNELI</h4>
-          <p>Αθλητικές εξατμίσεις GIANNELI για ανώτερες επιδόσεις και εντυπωσιακό ήχο.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
         <div class="service-card">
           <div class="service-icon" style="width:56px;height:56px;font-size:1.4rem;"><i class="fas fa-sliders-h"></i></div>
           <h4>OHLINS Ανάρτηση</h4>
@@ -256,10 +230,7 @@
         </p>
         <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:.8rem;margin-bottom:1.5rem;">
           <li style="display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.85);"><i class="fas fa-check-circle" style="color:var(--red);"></i>Νέες Yamaha & πολλές άλλες μάρκες</li>
-          <li style="display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.85);"><i class="fas fa-check-circle" style="color:var(--red);"></i>Μεταχειρισμένες μοτοσυκλέτες με εγγύηση</li>
           <li style="display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.85);"><i class="fas fa-check-circle" style="color:var(--red);"></i>Εξειδικευμένες συμβουλές για κάθε επίπεδο</li>
-          <li style="display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.85);"><i class="fas fa-check-circle" style="color:var(--red);"></i>Test ride (κατόπιν συνεννόησης)</li>
-          <li style="display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.85);"><i class="fas fa-check-circle" style="color:var(--red);"></i>Χρηματοδότηση & ευέλικτες πληρωμές</li>
         </ul>
         <a href="contact.html" class="btn-red">Επικοινωνήστε μαζί μας</a>
       </div>
@@ -293,7 +264,7 @@
     <div class="row g-4">
       <div class="col-lg-4 col-md-6">
         <div class="footer-brand">
-          <span class="footer-logo-text"><span class="logo-moto">MOTO</span> <span class="logo-solutions">SOLUTIONS</span></span>
+          <div class="footer-logo-badge"><img src="assets/logo-wordmark.png" alt="Moto Solutions"></div>
           <p class="mt-3">Εξουσιοδοτημένο Service Yamaha στη Μεταμόρφωση.</p>
           <div class="footer-social mt-3">
             <a href="https://www.facebook.com/p/Moto-Solutions-100063538421987/" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
@@ -306,6 +277,7 @@
         <ul class="footer-links">
           <li><a href="index.html"><i class="fas fa-chevron-right"></i>Αρχική</a></li>
           <li><a href="services.html"><i class="fas fa-chevron-right"></i>Service</a></li>
+          <li><a href="no-license.html"><i class="fas fa-chevron-right"></i>Χωρίς Δίπλωμα</a></li>
           <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Γκαλερί</a></li>
           <li><a href="blog.html"><i class="fas fa-chevron-right"></i>Blog</a></li>
           <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Επικοινωνία</a></li>
@@ -324,8 +296,10 @@
       <div class="col-lg-3 col-md-6 footer-col">
         <h6>Επικοινωνία</h6>
         <ul class="footer-links">
-          <li><a href="#"><i class="fas fa-map-marker-alt"></i>Νιόβης 12, Μεταμόρφωση 144 51</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i>Καραϊσκάκη 16 & Νιόβης (πίσω από Praktiker), 144 51 Μεταμόρφωση Αττικής</a></li>
           <li><a href="tel:2102846676"><i class="fas fa-phone"></i>210 284 6676</a></li>
+          <li><a href="tel:2102814084"><i class="fas fa-phone"></i>210 281 4084</a></li>
+          <li><a href="tel:6937404040"><i class="fas fa-phone-volume"></i>693 740 4040 (Τηλέφωνο Ανάγκης)</a></li>
           <li><a href="mailto:motosolutionsbusiness@gmail.com"><i class="fas fa-envelope"></i>motosolutionsbusiness@gmail.com</a></li>
         </ul>
       </div>
