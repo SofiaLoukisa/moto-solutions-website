@@ -204,4 +204,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ── Cookie Banner ── */
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieAccept = document.getElementById('cookieAccept');
+  const cookieDecline = document.getElementById('cookieDecline');
+  const cookieConsent = 'motoSolutionsCookieConsent';
+
+  // Show banner if consent not given
+  const showCookieBanner = () => {
+    if (!localStorage.getItem(cookieConsent)) {
+      cookieBanner.classList.add('show');
+    }
+  };
+
+  // Accept cookies
+  cookieAccept.addEventListener('click', () => {
+    localStorage.setItem(cookieConsent, 'accepted');
+    cookieBanner.classList.remove('show');
+    // Track with analytics if implemented
+  });
+
+  // Decline cookies
+  cookieDecline.addEventListener('click', () => {
+    localStorage.setItem(cookieConsent, 'declined');
+    cookieBanner.classList.remove('show');
+  });
+
+  // Show banner on page load
+  showCookieBanner();
+
 });
