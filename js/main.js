@@ -20,6 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navbar) {
     const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 50);
     window.addEventListener('scroll', onScroll, { passive: true });
+    
+    /* ── Ensure navbar stays visible on mobile ── */
+    navbar.style.position = 'fixed';
+    navbar.style.top = '0';
+    navbar.style.left = '0';
+    navbar.style.right = '0';
+    navbar.style.zIndex = '1030';
+    navbar.style.visibility = 'visible';
+    navbar.style.display = 'block';
+    navbar.style.opacity = '1';
   }
 
   /* ── Active nav link ── */
