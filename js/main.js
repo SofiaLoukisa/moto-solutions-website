@@ -22,14 +22,39 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll, { passive: true });
     
     /* ── Ensure navbar stays visible on mobile ── */
-    navbar.style.position = 'fixed';
-    navbar.style.top = '0';
-    navbar.style.left = '0';
-    navbar.style.right = '0';
-    navbar.style.zIndex = '1030';
-    navbar.style.visibility = 'visible';
-    navbar.style.display = 'block';
-    navbar.style.opacity = '1';
+    const enforceNavbarVisibility = () => {
+      navbar.style.position = 'fixed';
+      navbar.style.top = '0';
+      navbar.style.left = '0';
+      navbar.style.right = '0';
+      navbar.style.zIndex = '1030';
+      navbar.style.visibility = 'visible';
+      navbar.style.display = 'block';
+      navbar.style.opacity = '1';
+      navbar.style.width = '100%';
+      
+      // Also ensure navbar elements are visible
+      const navbarToggler = navbar.querySelector('.navbar-toggler');
+      const navbarCollapse = navbar.querySelector('.navbar-collapse');
+      if (navbarToggler) {
+        navbarToggler.style.visibility = 'visible';
+        navbarToggler.style.display = 'block';
+      }
+      if (navbarCollapse) {
+        navbarCollapse.style.visibility = 'visible';
+        navbarCollapse.style.opacity = '1';
+      }
+    };
+    
+    enforceNavbarVisibility();
+    
+    // Use MutationObserver to watch for any style changes that might hide the navbar
+    const observer = new MutationObserver(enforceNavbarVisibility);
+    observer.observe(navbar, { attributes: true, attributeFilter: ['style', 'class'] });
+    
+    // Also re-enforce on window resize and scroll
+    window.addEventListener('resize', enforceNavbarVisibility, { passive: true });
+    window.addEventListener('scroll', enforceNavbarVisibility, { passive: true });
   }
 
   /* ── Active nav link ── */
